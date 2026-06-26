@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations — À La Lune Restaurant</title>
+  <meta name="description" content="Reserve your table at À La Lune Restaurant in Accra. Book online or call +233 531 100 451. Ground floor, upper floor, and rooftop lounge available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="media/Official-Logo.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservations.html" class="active">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="reservations.html" class="nav-book">Book a Table</a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reservations.html">Reservations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://alalunerestaurant.com/wp-content/uploads/2024/12/Lune-Slider_0002_Slide-4.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Table Reservations</span>
+      <h1>Reserve Your<br /><em>Table at À La Lune</em></h1>
+      <p>Experience the perfect blend of French &amp; Italian cuisine, luxurious ambiance, and world-class service.</p>
+    </div>
+  </section>
+
+  <!-- RESERVATION SECTION -->
+  <section class="res-section">
+
+    <!-- FORM -->
+    <div class="res-form-col">
+      <span class="label">Make a Reservation</span>
+      <h2 style="margin-top:0.8rem; margin-bottom:0.5rem;">Book Your Evening</h2>
+      <p>Fill in the form below or call us at <a href="tel:+233531100451" style="color:var(--gold);">0531 100 451</a>. We'll confirm within 24 hours.</p>
+
+      <form class="res-form" action="#" method="POST" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Date <span style="color:var(--gold)">*</span></label>
+            <input type="date" class="form-control" name="date" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time <span style="color:var(--gold)">*</span></label>
+            <input type="time" class="form-control" name="time" min="11:00" max="22:00" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Number of Guests <span style="color:var(--gold)">*</span></label>
+          <select class="form-control" name="guests" required>
+            <option value="" disabled selected>Select guests</option>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+            <option>7–10 Guests</option>
+            <option>11–20 Guests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Preferred Dining Area</label>
+          <select class="form-control" name="area">
+            <option value="" disabled selected>Select area</option>
+            <option>Ground Floor Dining</option>
+            <option>Upper Floor Dining</option>
+            <option>Rooftop Lounge</option>
+            <option>No Preference</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name <span style="color:var(--gold)">*</span></label>
+            <input type="text" class="form-control" name="first_name" placeholder="Jean" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name <span style="color:var(--gold)">*</span></label>
+            <input type="text" class="form-control" name="last_name" placeholder="Dupont" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email <span style="color:var(--gold)">*</span></label>
+          <input type="email" class="form-control" name="email" placeholder="your@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" name="phone" placeholder="+233 XX XXX XXXX" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Dietary Restrictions</label>
+          <select class="form-control" name="dietary">
+            <option value="" selected>None</option>
+            <option>Vegetarian</option>
+            <option>Vegan</option>
+            <option>Gluten-Free</option>
+            <option>Halal</option>
+            <option>Nut Allergy</option>
+            <option>Other (please specify below)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Special Requests or Occasions</label>
+          <textarea class="form-control" name="special" placeholder="Birthday, anniversary, dietary notes, seating preferences…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-solid" style="width: 100%; padding: 1.1rem; font-size: 0.8rem;">Confirm Reservation</button>
+
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 1.2rem; line-height: 1.7;">
+          By submitting you agree to our cancellation policy. Please notify us at least 24 hours in advance for changes or cancellations.
+        </p>
+
+        <!-- Success state -->
+        <div class="form-success hidden" style="text-align:center; padding: 3rem 0;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">✓</div>
+          <h3 style="color: var(--gold); margin-bottom: 0.8rem;">Reservation Received</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem;">Thank you! We'll send a confirmation to your email within 24 hours. We look forward to welcoming you.</p>
+          <a href="index.html" class="btn mt-3">Return Home</a>
+        </div>
+      </form>
+    </div>
+
+    <!-- INFO SIDEBAR -->
+    <div class="res-info-col">
+      <div>
+        <span class="label">Choose Your Space</span>
+        <h3 style="margin-top: 0.8rem;">Three Unique<br /><em>Dining Experiences</em></h3>
+        <div class="divider"></div>
+        <div class="res-spaces">
+          <div class="res-space">
+            <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Lune_0001_Option-1-400x400.jpg" alt="Ground Floor" />
+            <div class="res-space-info">
+              <h5>Ground Floor Dining</h5>
+              <p>Our main dining room — elegant, social, and the heart of the À La Lune experience.</p>
+            </div>
+          </div>
+          <div class="res-space">
+            <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Lune_0002_Option-2-400x400.jpg" alt="Upper Floor" />
+            <div class="res-space-info">
+              <h5>Upper Floor Dining</h5>
+              <p>Elevated and intimate — ideal for special occasions and private gatherings.</p>
+            </div>
+          </div>
+          <div class="res-space">
+            <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Lune_0000_Option-3-400x400.jpg" alt="Rooftop" />
+            <div class="res-space-info">
+              <h5>Rooftop Lounge</h5>
+              <p>Open skies and moonlit evenings — the perfect setting for cocktails and conversation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <span class="label">Policies</span>
+        <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1.4rem;">
+          <div>
+            <h5 style="color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.4rem;">Cancellation Policy</h5>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">We understand plans change. Please notify us at least 24 hours in advance if you need to modify or cancel your reservation.</p>
+          </div>
+          <div>
+            <h5 style="color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.4rem;">Large Groups</h5>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">For groups of 10 or more, please contact us directly at <a href="tel:+233531100451" style="color: var(--gold);">0531 100 451</a> or email <a href="mailto:reservations@alalunerestaurant.com" style="color: var(--gold);">reservations@alalunerestaurant.com</a>.</p>
+          </div>
+          <div>
+            <h5 style="color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.4rem;">Private Events</h5>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Celebrating a birthday, anniversary, or corporate event? Our team crafts bespoke experiences for every occasion.</p>
+          </div>
+          <div>
+            <a href="https://wa.me/233531100451" target="_blank" rel="noopener" class="btn" style="display: inline-block;">
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+      <p>An Atmosphere for Exotic Tastes. French &amp; Italian fine dining at the heart of Accra, Ghana.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+233531100451">+233 531 100 451</a></li>
+        <li><a href="mailto:info@alalunerestaurant.com">info@alalunerestaurant.com</a></li>
+        <li><a href="https://wa.me/233531100451" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Follow Us</h5>
+      <div class="footer-social" style="flex-direction: column; gap: 0.7rem;">
+        <a href="https://www.instagram.com/alalune.signature" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/alalune.signature" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@alalune.signature" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 À La Lune Restaurant &amp; Café — All Rights Reserved</p>
+      <p>The Signature Apartments, Boundary Rd, Accra</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Show success on submit
+    document.querySelector('.res-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.querySelector('.form-success')?.classList.remove('hidden');
+      [...this.querySelectorAll('.form-group, button[type=submit], > p')].forEach(el => el.style.display = 'none');
+    });
+  </script>
+</body>
+</html>

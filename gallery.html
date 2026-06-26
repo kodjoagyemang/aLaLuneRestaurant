@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — À La Lune Restaurant</title>
+  <meta name="description" content="A visual journey through À La Lune's elegant interiors, fine dining moments, and moonlit ambiance in Accra, Ghana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="media/Official-Logo.png" />
+  <style>
+    .gallery-masonry {
+      padding-top: calc(var(--nav-h) + 2rem);
+      padding-bottom: 6vw;
+    }
+    .gm-item {
+      aspect-ratio: auto;
+    }
+    .gm-item img {
+      aspect-ratio: 4/3;
+      width: 100%;
+      object-fit: cover;
+    }
+    .gm-item:nth-child(4n+1) img {
+      aspect-ratio: 4/5;
+    }
+    .gallery-intro {
+      padding: calc(var(--nav-h) + 4rem) 8vw 3rem;
+      background: var(--black);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav scrolled">
+    <a href="index.html" class="nav-logo">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="reservations.html" class="nav-book">Book a Table</a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reservations.html">Reservations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- GALLERY INTRO -->
+  <div class="gallery-intro">
+    <span class="label fade-up">Gallery</span>
+    <h1 class="fade-up" style="font-size: clamp(2rem,4vw,3.5rem); margin-top: 0.8rem;">Where atmosphere is built<br /><em>through time and presence</em></h1>
+    <p class="fade-up" style="color: var(--text-muted); max-width: 520px; margin-top: 1.2rem; font-size: 0.95rem;">
+      A glimpse into the world of À La Lune — our moonlit interiors, carefully set tables, and the moments that make every visit unforgettable.
+    </p>
+  </div>
+
+  <!-- GALLERY MASONRY -->
+  <div class="gallery-masonry">
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0000_DSC_7883.jpg" alt="À La Lune interior" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0001_DSC_7782-1.jpg" alt="À La Lune dining room" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0002_DSC_7771.jpg" alt="À La Lune table setting" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0003_DSC_7757.jpg" alt="À La Lune ambiance" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0004_DSC_7749.jpg" alt="À La Lune lounge area" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0005_DSC_7738.jpg" alt="À La Lune décor" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0006_DSC_7733.jpg" alt="À La Lune interior detail" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0007_DSC_7730.jpg" alt="À La Lune atmosphere" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0008_DSC_7725.jpg" alt="À La Lune dining experience" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0009_DSC_7716.jpg" alt="À La Lune evening" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0010_DSC_7711.jpg" alt="À La Lune setting" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0011_DSC_7709.jpg" alt="À La Lune moments" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0012_DSC_7690.jpg" alt="À La Lune elegance" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0013_DSC_7687.jpg" alt="À La Lune interior" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0014_DSC_7673.jpg" alt="À La Lune dining" loading="lazy" />
+    </div>
+    <div class="gm-item">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0015_DSC_7648.jpg" alt="À La Lune detail" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="text-align:center; padding: 5rem 4vw; background: var(--deep);">
+    <span class="label fade-up" style="display:block; margin-bottom:1rem;">Experience It In Person</span>
+    <h2 class="fade-up" style="margin-bottom: 2rem;">Come dine with us</h2>
+    <a href="reservations.html" class="btn btn-solid fade-up">Book a Table</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+      <p>An Atmosphere for Exotic Tastes. French &amp; Italian fine dining at the heart of Accra, Ghana.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+233531100451">+233 531 100 451</a></li>
+        <li><a href="mailto:info@alalunerestaurant.com">info@alalunerestaurant.com</a></li>
+        <li><a href="https://wa.me/233531100451" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Follow Us</h5>
+      <div class="footer-social" style="flex-direction: column; gap: 0.7rem;">
+        <a href="https://www.instagram.com/alalune.signature" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/alalune.signature" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@alalune.signature" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 À La Lune Restaurant &amp; Café — All Rights Reserved</p>
+      <p>The Signature Apartments, Boundary Rd, Accra</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lb-close">✕</button>
+    <button class="lb-prev">‹</button>
+    <img src="" alt="" />
+    <button class="lb-next">›</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

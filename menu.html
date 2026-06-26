@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — À La Lune Restaurant</title>
+  <meta name="description" content="Explore À La Lune's menu of authentic French & Italian cuisine, handmade pastas, premium mains and curated drinks in Accra, Ghana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="media/Official-Logo.png" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="index.html" class="nav-logo">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="reservations.html" class="nav-book">Book a Table</a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+  <nav class="nav-drawer">
+    <button class="drawer-close">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reservations.html">Reservations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0000_DSC_7883.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Cuisine</span>
+      <h1>A tide that moves<br /><em>through the plate</em></h1>
+      <p>French and Italian classics, crafted with precision and served with passion in the heart of Accra.</p>
+    </div>
+  </section>
+
+  <!-- MENU CONTENT -->
+  <section class="section menu-preview">
+    <div class="menu-cols">
+
+      <!-- Left: Sticky nav -->
+      <div class="menu-sticky">
+        <span class="label">Our Menu</span>
+        <h2 style="font-size: 2rem; margin-top: 1rem;">Explore<br /><em>Every Course</em></h2>
+        <div class="divider"></div>
+        <div class="menu-categories">
+          <button class="menu-cat-btn active" data-target="starters">Starters</button>
+          <button class="menu-cat-btn" data-target="pasta">Pasta &amp; Risotto</button>
+          <button class="menu-cat-btn" data-target="mains">Main Course</button>
+          <button class="menu-cat-btn" data-target="pizza">Wood-Fired Pizza</button>
+          <button class="menu-cat-btn" data-target="salads">Salads</button>
+          <button class="menu-cat-btn" data-target="desserts">Desserts</button>
+          <button class="menu-cat-btn" data-target="drinks">Drinks</button>
+        </div>
+        <div style="margin-top: 3rem; padding: 2rem; background: var(--dark); border-left: 2px solid var(--gold);">
+          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.9;">
+            For allergies, dietary restrictions, or special requests, please inform your server. Our chefs are happy to accommodate.
+          </p>
+          <a href="reservations.html" class="btn" style="margin-top: 1.5rem; display: inline-block;">Reserve a Table</a>
+        </div>
+      </div>
+
+      <!-- Right: Menu items -->
+      <div class="menu-items">
+
+        <!-- STARTERS -->
+        <div class="menu-section active" id="starters">
+          <h4>Starters &amp; Antipasti</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Beef Carpaccio</div>
+              <div class="menu-item-desc">Prime beef tenderloin, truffle aioli, crispy capers, shaved parmesan, micro herbs</div>
+            </div>
+            <div class="menu-item-price">GH₵ 145</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tuna Tartare</div>
+              <div class="menu-item-desc">Sashimi-grade yellowfin tuna, lemon–lime dressing, avocado, sesame, wonton crisps</div>
+            </div>
+            <div class="menu-item-price">GH₵ 165</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Burrata e Pomodoro</div>
+              <div class="menu-item-desc">Creamy burrata, heritage tomatoes, aged balsamic, basil oil, toasted pine nuts</div>
+            </div>
+            <div class="menu-item-price">GH₵ 125</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">French Onion Soup</div>
+              <div class="menu-item-desc">Slow-caramelised onions in rich beef consommé, gruyère crouton, fresh thyme</div>
+            </div>
+            <div class="menu-item-price">GH₵ 110</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Escargots à la Bourguignonne</div>
+              <div class="menu-item-desc">Classic Burgundy snails baked in herb-garlic butter, served with sourdough</div>
+            </div>
+            <div class="menu-item-price">GH₵ 155</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Salmon Gravlax</div>
+              <div class="menu-item-desc">House-cured salmon, dill crème fraîche, capers, pickled cucumber, rye crispbread</div>
+            </div>
+            <div class="menu-item-price">GH₵ 140</div>
+          </div>
+        </div>
+
+        <!-- PASTA -->
+        <div class="menu-section" id="pasta">
+          <h4>Pasta &amp; Risotto</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tagliatelle al Ragù Bolognese</div>
+              <div class="menu-item-desc">Hand-rolled egg tagliatelle, slow-braised beef &amp; pork ragù, aged parmesan</div>
+            </div>
+            <div class="menu-item-price">GH₵ 175</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Spaghetti alle Vongole</div>
+              <div class="menu-item-desc">Fresh clams, white wine, garlic, chilli, parsley, extra-virgin olive oil</div>
+            </div>
+            <div class="menu-item-price">GH₵ 195</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Linguine al Nero di Seppia</div>
+              <div class="menu-item-desc">Squid ink linguine, tiger prawns, cherry tomatoes, white wine, chilli</div>
+            </div>
+            <div class="menu-item-price">GH₵ 210</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Risotto ai Funghi Porcini</div>
+              <div class="menu-item-desc">Carnaroli rice, wild porcini mushrooms, truffle oil, aged parmesan, fresh thyme</div>
+            </div>
+            <div class="menu-item-price">GH₵ 185</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Gnocchi al Gorgonzola</div>
+              <div class="menu-item-desc">Potato gnocchi, creamy gorgonzola sauce, walnuts, crispy sage</div>
+            </div>
+            <div class="menu-item-price">GH₵ 160</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Cacio e Pepe</div>
+              <div class="menu-item-desc">Tonnarelli pasta, Pecorino Romano, Parmigiano Reggiano, cracked black pepper</div>
+            </div>
+            <div class="menu-item-price">GH₵ 150</div>
+          </div>
+        </div>
+
+        <!-- MAINS -->
+        <div class="menu-section" id="mains">
+          <h4>Main Course</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Filet de Bœuf Rossini</div>
+              <div class="menu-item-desc">250g beef tenderloin, foie gras, black truffle jus, potato gratin, seasonal vegetables</div>
+            </div>
+            <div class="menu-item-price">GH₵ 380</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Rack of Lamb Provençal</div>
+              <div class="menu-item-desc">Herb-crusted French rack, ratatouille, roasted garlic purée, lamb jus</div>
+            </div>
+            <div class="menu-item-price">GH₵ 340</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Grilled Sea Bass</div>
+              <div class="menu-item-desc">Whole Mediterranean sea bass, lemon-caper beurre blanc, fennel, baby potatoes</div>
+            </div>
+            <div class="menu-item-price">GH₵ 290</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Poulet Rôti</div>
+              <div class="menu-item-desc">Free-range half chicken, tarragon jus, roasted vegetables, pommes mousseline</div>
+            </div>
+            <div class="menu-item-price">GH₵ 240</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Grilled King Prawn</div>
+              <div class="menu-item-desc">Tiger prawns, herb butter, garlic, lemon, served with seasonal greens</div>
+            </div>
+            <div class="menu-item-price">GH₵ 310</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Vegetarian Wellington <em style="font-size:0.78rem; color: var(--gold);">V</em></div>
+              <div class="menu-item-desc">Roasted portobello, spinach, chestnut mushroom duxelles, puff pastry, red wine sauce</div>
+            </div>
+            <div class="menu-item-price">GH₵ 210</div>
+          </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="menu-section" id="pizza">
+          <h4>From the Wood-Fired Oven</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Margherita Classica <em style="font-size:0.78rem; color: var(--gold);">V</em></div>
+              <div class="menu-item-desc">San Marzano tomato, fior di latte mozzarella, fresh basil, extra-virgin olive oil</div>
+            </div>
+            <div class="menu-item-price">GH₵ 120</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Quattro Stagioni</div>
+              <div class="menu-item-desc">Artichokes, prosciutto cotto, mushrooms, black olives, mozzarella</div>
+            </div>
+            <div class="menu-item-price">GH₵ 155</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tartufo Bianco</div>
+              <div class="menu-item-desc">White truffle cream, mozzarella, parmesan, black truffle shavings, fresh thyme</div>
+            </div>
+            <div class="menu-item-price">GH₵ 210</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Prosciutto e Rucola</div>
+              <div class="menu-item-desc">San Marzano tomato, mozzarella, 24-month prosciutto, baby arugula, parmesan</div>
+            </div>
+            <div class="menu-item-price">GH₵ 165</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Frutti di Mare</div>
+              <div class="menu-item-desc">Cherry tomato sauce, calamari, tiger prawns, mussels, garlic, chilli, parsley</div>
+            </div>
+            <div class="menu-item-price">GH₵ 195</div>
+          </div>
+        </div>
+
+        <!-- SALADS -->
+        <div class="menu-section" id="salads">
+          <h4>Salads &amp; Greens</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Salade Niçoise</div>
+              <div class="menu-item-desc">Seared yellowfin tuna, haricots verts, heritage tomatoes, olives, eggs, anchovy dressing</div>
+            </div>
+            <div class="menu-item-price">GH₵ 165</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Caesar Classique</div>
+              <div class="menu-item-desc">Cos lettuce, house Caesar dressing, parmesan crisp, sourdough croutons<br /><em style="font-size:0.78rem;">+ Grilled chicken GH₵ 35 | Anchovies GH₵ 20</em></div>
+            </div>
+            <div class="menu-item-price">GH₵ 110</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Caprese Classico <em style="font-size:0.78rem; color: var(--gold);">V</em></div>
+              <div class="menu-item-desc">Heirloom tomatoes, buffalo mozzarella, basil, aged balsamic, Sicilian olive oil</div>
+            </div>
+            <div class="menu-item-price">GH₵ 120</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Arugula &amp; Burrata <em style="font-size:0.78rem; color: var(--gold);">V</em></div>
+              <div class="menu-item-desc">Wild rocket, creamy burrata, candied walnuts, pear, honey-lemon dressing</div>
+            </div>
+            <div class="menu-item-price">GH₵ 135</div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-section" id="desserts">
+          <h4>Desserts &amp; Patisserie</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Crème Brûlée</div>
+              <div class="menu-item-desc">Classic Madagascan vanilla custard, caramelised sugar crust, seasonal berries</div>
+            </div>
+            <div class="menu-item-price">GH₵ 95</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tiramisu Tradizionale</div>
+              <div class="menu-item-desc">Savoiardi, mascarpone cream, Illy espresso, dark cocoa, Marsala wine</div>
+            </div>
+            <div class="menu-item-price">GH₵ 105</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Fondant au Chocolat</div>
+              <div class="menu-item-desc">Warm Valrhona chocolate fondant, molten centre, vanilla ice cream, cocoa nibs</div>
+            </div>
+            <div class="menu-item-price">GH₵ 115</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Panna Cotta al Caramello</div>
+              <div class="menu-item-desc">Vanilla panna cotta, salted caramel, candied hazelnuts, orange zest</div>
+            </div>
+            <div class="menu-item-price">GH₵ 90</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Tarte Tatin</div>
+              <div class="menu-item-desc">Caramelised apple tarte tatin, flaky pastry, crème fraîche, calvados glaze</div>
+            </div>
+            <div class="menu-item-price">GH₵ 100</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Selection of Sorbets &amp; Gelati</div>
+              <div class="menu-item-desc">Three scoops, ask your server for today's flavours</div>
+            </div>
+            <div class="menu-item-price">GH₵ 80</div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="menu-section" id="drinks">
+          <h4>Cocktails &amp; Drinks</h4>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">La Lune Signature</div>
+              <div class="menu-item-desc">Grey Goose vodka, elderflower liqueur, cucumber, lemon, prosecco</div>
+            </div>
+            <div class="menu-item-price">GH₵ 115</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Côte d'Azur</div>
+              <div class="menu-item-desc">Hendrick's gin, St-Germain, lemon, honey syrup, lavender bitters, sparkling water</div>
+            </div>
+            <div class="menu-item-price">GH₵ 120</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Negroni Classique</div>
+              <div class="menu-item-desc">Campari, sweet vermouth, gin, orange twist</div>
+            </div>
+            <div class="menu-item-price">GH₵ 110</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Midnight in Accra</div>
+              <div class="menu-item-desc">Dark rum, passion fruit, ginger, lime, activated charcoal foam</div>
+            </div>
+            <div class="menu-item-price">GH₵ 125</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Aperol Spritz</div>
+              <div class="menu-item-desc">Aperol, prosecco, soda, orange</div>
+            </div>
+            <div class="menu-item-price">GH₵ 100</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">House Wines</div>
+              <div class="menu-item-desc">Curated selection of French &amp; Italian wines — please ask your server for the current wine list</div>
+            </div>
+            <div class="menu-item-price">From GH₵ 90</div>
+          </div>
+
+          <div class="menu-item">
+            <div>
+              <div class="menu-item-name">Non-Alcoholic Selection</div>
+              <div class="menu-item-desc">Fresh-pressed juices, sparkling water, mocktails, artisan coffee &amp; teas</div>
+            </div>
+            <div class="menu-item-price">From GH₵ 45</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER IMAGE -->
+  <div style="position: relative; height: 55vh; overflow: hidden;">
+    <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/la_0014_DSC_7673.jpg"
+         alt="À La Lune atmosphere" loading="lazy"
+         style="width:100%; height:100%; object-fit:cover; opacity: 0.6;" />
+    <div style="position:absolute; inset:0; background: rgba(8,8,8,0.55); display:flex; align-items:center; justify-content:center; text-align:center; flex-direction:column; gap:2rem; padding:2rem;">
+      <h2 style="font-family: var(--font-serif);">Around the table, with flavours<br /><em>that invite you to stay a little longer</em></h2>
+      <a href="reservations.html" class="btn btn-solid">Reserve Your Table</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="https://alalunerestaurant.com/wp-content/uploads/2024/12/Official-Logo.png" alt="À La Lune" />
+      <p>An Atmosphere for Exotic Tastes. French &amp; Italian fine dining at the heart of Accra, Ghana.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigate</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+233531100451">+233 531 100 451</a></li>
+        <li><a href="mailto:info@alalunerestaurant.com">info@alalunerestaurant.com</a></li>
+        <li><a href="https://wa.me/233531100451" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Follow Us</h5>
+      <div class="footer-social" style="flex-direction: column; gap: 0.7rem;">
+        <a href="https://www.instagram.com/alalune.signature" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/alalune.signature" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@alalune.signature" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 À La Lune Restaurant &amp; Café — All Rights Reserved</p>
+      <p>The Signature Apartments, Boundary Rd, Accra</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
