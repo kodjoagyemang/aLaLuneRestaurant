@@ -530,6 +530,80 @@ h4 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
   white-space: nowrap;
 }
 
+/* ---------- Menu Card Grid ---------- */
+.menu-section-title { margin-bottom: 2.4rem; }
+.menu-section-title .label { display: block; margin-bottom: 0.6rem; }
+.menu-section-title h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); margin-bottom: 0.8rem; }
+
+.menu-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  margin-bottom: 1rem;
+}
+.menu-card {
+  background: var(--deep);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.menu-card-img {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  position: relative;
+}
+.menu-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.88) contrast(1.1) saturate(0.85);
+  transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.5s ease;
+}
+.menu-card:hover .menu-card-img img {
+  transform: scale(1.07);
+  filter: brightness(1) contrast(1.05) saturate(1);
+}
+.menu-card-body {
+  padding: 1.2rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.menu-card-name {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--cream);
+  margin-bottom: 0.4rem;
+}
+.menu-card-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+.menu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--mid);
+}
+.menu-card-price {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--gold);
+}
+.menu-card-tag {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 0.15em 0.5em;
+}
+
 /* ---------- About / Promise ---------- */
 .promises {
   background: var(--black);
